@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden; /* Scrollbars hide karne ke liye */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#smartBoard {
+    display: block;
+    background-color: #ffffff;
+    cursor: crosshair; /* Pointing cursor */
+}
+
+.toolbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    z-index: 10;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #e0e0e0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button.active {
+    background: #4caf50;
+    color: white;
+}
+
+button:hover {
+    background: #d0d0d0;
+}
+
+button.active:hover {
+    background: #45a049;
+}
+
+#clearBtn {
+    background: #ff5252;
+    color: white;
+}
+
+#clearBtn:hover {
+    background: #ff1744;
+}
+
+input[type="color"] {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
