@@ -1,2 +1,2 @@
 # smartboard
-# https://jarfanmade.me/smartboard/
+# https://jarfanmade.me/board/
